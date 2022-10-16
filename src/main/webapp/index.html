@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Concert Event</title>
+<style>
+	form{
+		margin:10px;
+	}
+	
+	body{
+		background-color:#f0eee9;
+	}
+
+</style>
+</head>
+<body>
+<form action="addEventServlet" method="post">
+<h1>Concert Event</h1>
+<div><label for="artist"> Artist:</label> <input type="text" id="artist" name="artist"></div>
+<br>
+<div><label for="concertDate"> Concert Date:</label> 
+		<input type ="text" name ="month" placeholder="Month" size="4"> 
+		<input type ="text" name ="day" placeholder="Day" size="4">, 
+		<input type ="text" name ="year" placeholder="Year" size="4"></div>
+<br>
+<div><label for="concertTime"> Concert Time:</label> 
+		<input type ="text" name ="hour" placeholder="Hour" size="4">, 
+		<input type ="text" name ="minutes" placeholder="Minutes" size="4">
+</div>
+<br>
+<input type = "submit" value="Add Event" class="btn btn-primary">
+<br>
+<br>
+<br>
+<a href="viewAllEventsServlet">View All Events</a>
+
+</form>
+</body>
+</html>
